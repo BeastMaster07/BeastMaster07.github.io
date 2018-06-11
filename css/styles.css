@@ -1,0 +1,151 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    font-size: 2.4rem;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+
+ .navbar-expand-md .navbar-nav .nav-link {
+    /* text-transform: uppercase; */
+    /* letter-spacing: 1px; */
+    padding-left: 3rem;
+    padding-right: 3rem ;
+    transition: all 0.2s
+}
+
+
+
+
+.navbar-brand {
+    font-size: 2.4rem;
+}
+
+.nav-link:hover {
+    transform: scale(1.2) rotate(3deg) translateY(-3px);   
+}
+
+.navbar-logo {
+    border-radius: 50%;
+    transition: all .2s;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.3);
+
+}
+
+.bg-light {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 9rem 8rem;
+    text-align: center;
+}
+
+.heading_container {
+    padding: 5rem 0;
+    font-size: 6.6rem;   
+    font-weight: 300; 
+    letter-spacing: 2px;
+    animation: myAnimation 2s;
+    animation-fill-mode: forwards;
+    transition: all 1s;
+}
+
+@keyframes myAnimation {
+    0% {opacity: 0; transform: translateY(-20rem);}
+    100% {opacity: 1; transform: translateY(1px);}
+}
+
+.text_container {
+    padding: 3rem 0;
+    font-weight: 400;
+}
+
+.section_about {
+    background-color: #333;
+    padding-bottom: 20remx;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/zany-jadraque-571205-unsplash.jpg);
+    background-size: cover;
+}
+
+.section_projects {
+    /* background-color: rgb(155, 35, 40); */
+    background-image: linear-gradient(to right, rgb(244, 32, 39), rgb(165, 35, 40), rgb(244, 32, 39));
+}
+
+.row {
+    width: 100%;
+    height: 45rem;
+    margin-bottom: 2rem;
+
+}
+
+.col-1-of-2 {
+    width: 50%;
+    display: inline-block;
+    margin: 2rem auto;
+    /* display: inline-block; */
+    
+}
+
+.project_img {
+    margin: 2rem 2rem;
+    height: 100%;
+    width: 90%;
+    border-radius: 3px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    border: 7px solid #777;
+    transition: all .2s;
+}
+
+.project_img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid #777;
+}
+
+.section_contact {
+    padding-bottom: 25rem;
+    background-color: #333;
+}
+
+.icon_list {
+    list-style: none;
+}
+
+.icon_item {
+    display: inline-block;
+    padding: 0 3rem;
+    font-size: 3.2rem;
+    /* background-color: #333; */
+}
+
+.fab {
+    color: whitesmoke;
+    transition: all 0.2s;
+}
+
+.fab:hover {
+    transform: scale(1.5) rotate(3deg);
+}
+
+.footer_container {
+    font-size: 1.6rem;
+    height: 8rem;
+    padding: .5rem;
+    text-align: center;
+    color: #333333;
+    border-top: 10px solid #777;
+    background-color: #f1f1f1;
+}
+
+.footer_text {
+    margin-bottom: 0; 
+}
