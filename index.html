@@ -8,26 +8,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="scripts.js"></script>
 </head>
 <body>
-    <!-- <header class="nav">
-        <div class="navbar_left">
-            <ul class="nav_list">
-               <li class="nav_item"><a href="#" class="nav_link"><img class="nav_img" src="img/1521638672962_fx (2).jpg" alt="My Photo"></a></li>
-               <li class="nav_item"><a href="#" class="nav_link">Aman</a></li>
-            </ul>
-
-            <div class="navbar_right">
-                <ul class="nav_list">
-                    <li class="nav_item"><a href="about" class="navbar_about">About</a></li>
-                    <li class="nav_item"><a href="projects" class="navbar_projects">Projects</a></li>
-                    <li class="nav_item"><a href="contact" class="navbar_contact">Contact Me</a></li>
-                </ul>
-            </div>
-        </div>
-    </header> -->
 
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <a href="#"><img src="img/1521638672962_fx (2).jpg" alt="My Photo" class="navbar-brand navbar-logo" height="70px" width="70px"></a>
@@ -45,7 +34,7 @@
                   <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact Me</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -54,45 +43,62 @@
     <main>
         <section class="section_about" id="about">
             <div class="container">
-                <h1 class="heading_container">About</h1>
-                <p class="text_container">Hi! This is Aman Agarwal, a third year undergraduate student in pursuit of a successful career in the field of Web Development. Since childhood I have always been fascinated by techonology and love to explore new things related to it. I got my first computer at the age of 11 and since then I am in love with computers. Currently I am enrolled in Udacity's FrontEnd Nanodegree Program and this project is a part of it.</p>
+                <h1 class="heading_container" data-aos="zoom-out-down" data-aos-duration="800" data-aos-easing="ease-in">About</h1>
+                <p class="text_container" data-aos="zoom-in-up" data-aos-duration="800" data-aos-easing="ease-in">Hi! This is Aman Agarwal, a third year undergraduate student in pursuit of a successful career in the field of Web Development.<br> Since childhood I have always been fascinated by techonology and love to explore new things related to it. I got my first computer at the age of 11 and since then I am in love with computers.<br> Currently I am enrolled in Udacity's FrontEnd Nanodegree Program and also doing Freecodecamp FrontEnd Certification course.<br>I love listening songs because it keeps me alive.<br>Apart from this, I am a part time reader and a full time dreamer. </p>
             </div>
         </section>
 
         <section class="section_projects" id="projects">
             <div class="container">
-                <h1 class="heading_container">My Projects</h1>
+                <h1 class="heading_container" data-aos="zoom-in" data-aos-duration="800" data-aos-easing="ease-in">My Projects</h1>
                 <!-- <p class="text_container">Here are some of the projects which I recently made</p> -->
                 <div class="container_images">
                     <div class="row">
                         <div class="col-1-of-2">
-                            <a href="#">
-                                <img  class="project_img" src="img/1521638672962_fx (2).jpg" alt="Project 1">
-                                <p class="image-text">Project 1</p>
+                            <a href="https://beastmaster07.github.io/To-do-List/" target="_blank">
+                                <img  class="project_img"  data-aos="fade-down-right"  data-aos-easing="ease-in"
+                                data-aos-duration="800" src="img/to-do-list.png" alt="To Do List">
+                                <p class="image-text">To Do List</p>
                             </a>
                         </div>
 
                         <div class="col-1-of-2">
-                                <a href="#">
-                                    <img class="project_img" src="img/1521638672962_fx (2).jpg" alt="Project 2">
-                                    <p class="image-text">Project 2</p>
+                                <a href="https://beastmaster07.github.io/RGB-Color-Game/" target="_blank">
+                                    <img class="project_img" data-aos="fade-down-left" data-aos-easing="ease-in" data-aos-duration="800"  src="img/rgb-color-game.png" alt="rgb color game">
+                                    <p class="image-text">RGB Color Game</p>
                                 </a>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-1-of-2">
-                            <a href="#">
-                                <img class="project_img" src="img/1521638672962_fx (2).jpg" alt="Project 3">
-                                <p class="image-text">Project 3</p>
+                            <a href="https://beastmaster07.github.io/Animal-Trading-Card/" target="_blank">
+                                <img class="project_img" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="800" src="img/animal-card.png" alt="Animal Card">
+                                <p class="image-text">Animal Trading Card</p>
                             </a>
                         </div>
 
                         <div class="col-1-of-2">
-                            <a href="#">
-                                <img class="project_img" src="img/1521638672962_fx (2).jpg" alt="Project 4">
-                                <p class="image-text">Project 4</p>
+                            <a href="https://beastmaster07.github.io/Pixel-Art-Maker/" target="_blank">
+                                <img class="project_img" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="800" src="img/pixel-art.png" alt="pixel-art">
+                                <p class="image-text">Pixel Art</p>
+                            </a>    
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-1-of-2">
+                            <a href="https://beastmaster07.github.io/Aarohan18/" target="_blank">
+                                <img class="project_img" data-aos="fade-up-right" data-aos-easing="ease-in" data-aos-duration="800" src="img/Aarohan18.png" alt="Aarohan18">
+                                <p class="image-text">Aarohan18</p>
                             </a>
+                        </div>
+
+                        <div class="col-1-of-2">
+                            <a href="https://beastmaster07.github.io/Tribute-Page/" target="_blank">
+                                <img class="project_img" data-aos="fade-up-left" data-aos-easing="ease-in" data-aos-duration="800" src="img/Tribute-Page.png" alt="Tribute Page">
+                                <p class="image-text">Tribute Page</p>
+                            </a>    
                         </div>
                     </div>
                 </div>
@@ -101,9 +107,9 @@
 
         <section class="section_contact" id="contact">
                 <div class="container">
-                        <h1 class="heading_container">Contact Me</h1>
-                        <p class="text_container">Want to contact me? Here are the different ways by which you can reach out to me. Would love to stay in touch with you.</p>
-                        <ul class="icon_list">
+                        <h1 class="heading_container" data-aos="flip-up" data-aos-easing="ease-in" data-aos-duration="1200">Contact Me</h1>
+                        <p class="text_container" data-aos="flip-down"data-aos-easing="ease-in" data-aos-duration="1200">Want to contact me? Here are the different ways by which you can reach out to me. Would love to stay in touch with you.</p>
+                        <ul class="icon_list" data-aos="zoom-in-up" data-aos-easing="ease-in" data-aos-duration="1000">
                             <li class="icon_item"><a href="https://github.com/BeastMaster07"><i class="fab fa-github"></i></a></li>
                             <li class="icon_item"><a href="www.linkedin.com/in/aman-agarwal-b92512164"><i class="fab fa-linkedin"></i></a></li>
                             <li class="icon_item"><a href="https://www.freecodecamp.org/beastmaster07"><i class="fab fa-free-code-camp"></i></a></li>
@@ -114,16 +120,22 @@
     </main>
 
     <footer>
-            <div class="footer_container">
-              <p class="footer_text">Made with &#9825; by  Aman</p>
-              <p class="footer_text">Copyright  &copy; 2018</p>
-            </div>
-          </footer>
+        <div class="footer_container">
+            <p class="footer_text">Made with &#9825; by  Aman</p>
+            <p class="footer_text">Copyright  &copy; 2018</p>
+        </div>
+    </footer>
 <!-- 
     <footer>
         <div class="footer_text">
             <p class="footer_para">Made with love by Aman Agarwal</p>
         </div>
     </footer> -->
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
