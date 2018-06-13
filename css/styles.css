@@ -17,8 +17,6 @@ body {
 
 
  .navbar-expand-md .navbar-nav .nav-link {
-    /* text-transform: uppercase; */
-    /* letter-spacing: 1px; */
     padding-left: 3rem;
     padding-right: 3rem ;
     transition: all 0.2s
@@ -58,17 +56,9 @@ body {
 
 .heading_container {
     padding: 5rem 0;
-    font-size: 6.6rem;   
+    font-size: 6.6rem;
     font-weight: 300; 
     letter-spacing: 2px;
-    /* animation: myAnimation 2s; */
-    /* animation-fill-mode: forwards; */
-    /* transition: all 1s; */
-}
-
-@keyframes myAnimation {
-    0% {opacity: 0; transform: translateY(-20rem);}
-    100% {opacity: 1; transform: translateY(1px);}
 }
 
 .text_container {
@@ -89,40 +79,32 @@ body {
 
 
 .section_projects {
-    /* background-color: rgb(155, 35, 40); */
     background-image: linear-gradient(to right, rgb(244, 32, 39), rgb(165, 35, 40), rgb(244, 32, 39));
 }
 
 .row {
     width: 100%;
-    /* height: 100%; */
-    /* margin: 2rem 0; */
-    /* margin-bottom: 2rem; */
-
 }
 
 .col-1-of-2 {
     width: 50%;
     height: 100%;
-    display: inline-block;
-    /* margin: 2rem auto; */
-    /* display: inline-block; */
-    
+    display: inline-block;    
 }
 
 .project_img {
-    margin: 2rem 2rem;
+    margin: 2rem;
     height: 42rem;
     width: 90%;
     border-radius: 3px;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
     border: 3px solid #777;
     transition: all .2s;
 }
 
 .project_img:hover {
-    transform: scale(1.04);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.04) translateY(-20px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     border: 1px solid #777; 
 }
 
@@ -131,20 +113,6 @@ body {
     display: inline-block;
 }
 
-.img-right {
-    animation: slideRight 3s forwards ease;
-}
-
-@keyframes slideRight {
-    0% {
-        opacity: 0;
-        transform: translate(400px);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
 
 /* ================================================================================= */
 /*                              CONTACT SECTION                                      */
@@ -163,7 +131,6 @@ body {
     display: inline-block;
     padding: 0 3rem;
     font-size: 3.2rem;
-    /* background-color: #333; */
 }
 
 .fab {
@@ -186,7 +153,7 @@ body {
     padding: .5rem; 
     text-align: center;
     color: #333333;
-    border-top: 10px solid #777;
+    border-top: 1rem solid #777;
     background-color: #f1f1f1;
 }
 
@@ -197,13 +164,7 @@ body {
 /* ===================================================================================== */
 /*                                     MEDIA QUERIES                                     */
 /* ===================================================================================== */
-/* @media only screen and (max-width: 900px) {
-    .container{
-        padding: 5rem 3rem;
-    }   
-  
 
-} */
 
 @media only screen and (max-width: 900px) {
 
@@ -226,4 +187,3 @@ body {
         padding: 0 1rem;
     }
 }
-
