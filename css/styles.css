@@ -10,11 +10,9 @@ body {
     color: whitesmoke;
 }
 
-
 /* ===================================================================================== */
 /*                                       NAVBAR                                          */
 /* ===================================================================================== */
-
 
  .navbar-expand-md .navbar-nav .nav-link {
     padding-left: 3rem;
@@ -101,7 +99,6 @@ body {
 }
 
 .project_img {
-    /* margin: 2rem; */
     height: 100%;
     width: 100%;
     vertical-align: middle;
