@@ -80,7 +80,7 @@ body {
 
 
 .section_projects {
-    background-image: linear-gradient(to top, rgb(244, 32, 39), rgb(165, 35, 40));
+    background-color: #ae2616;
 }
 
 .row {
@@ -109,7 +109,8 @@ body {
     box-shadow: 0 2rem 3rem rgba(26, 6, 6, 0.3);
     border: 3px solid #777;
     transition: all .2s;
-}
+    margin-bottom: 6rem;
+} 
 
 .project_img:hover {
     transform: scale(1.2) ;
