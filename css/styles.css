@@ -4,21 +4,18 @@ html {
 }
 
 body {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
     color: whitesmoke;
+    overflow-x: hidden;
 }
-
 
 /* ===================================================================================== */
 /*                                       NAVBAR                                          */
 /* ===================================================================================== */
 
-
  .navbar-expand-md .navbar-nav .nav-link {
-    /* text-transform: uppercase; */
-    /* letter-spacing: 1px; */
     padding-left: 3rem;
     padding-right: 3rem ;
     transition: all 0.2s
@@ -52,26 +49,28 @@ body {
 /* =============================================================================== */
 
 .container {
-    padding: 8rem 2rem;
+    padding: 5rem 1vw;
     text-align: center;
 }
 
 .heading_container {
     padding: 5rem 0;
-    font-size: 6.6rem;   
+    font-size: 6.6rem;
     font-weight: 300; 
     letter-spacing: 2px;
 }
 
 .text_container {
     padding: 3rem 0;
+    line-height: 1.7;
     font-weight: 400;
+    color: #d7d7d7;
 }
 
 .section_about {
     background-color: #333;
     padding-bottom: 20rem;
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/zany-jadraque-571205-unsplash.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/zany-jadraque-571205-unsplash.jpg);
     background-size: cover;
 }
 
@@ -81,33 +80,54 @@ body {
 
 
 .section_projects {
-    /* background-color: rgb(155, 35, 40); */
-    background-image: linear-gradient(to right, rgb(244, 32, 39), rgb(165, 35, 40), rgb(244, 32, 39));
+    background-color: #810601;
+    /* background:
+radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+background-color: #300; 
+background-size: 100px 100px; */
 }
 
 .row {
     width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
 .col-1-of-2 {
-    width: 50%;
+    width: calc((100% - 5rem)/2);
     height: 100%;
-    display: inline-block;
+    display: inline-block; 
+    float: left;
+    vertical-align: middle;
+}
+
+.odd { 
+    margin-right: 5rem;
 }
 
 .project_img {
-    margin: 2rem 2rem;
-    height: 42rem;
+    height: 90%;
     width: 90%;
+    vertical-align: middle;
     border-radius: 3px;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2rem 3rem rgba(26, 6, 6, 0.3);
     border: 3px solid #777;
     transition: all .2s;
-}
+    margin-bottom: 6rem;
+} 
 
 .project_img:hover {
-    transform: scale(1.04);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.2) ;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     border: 1px solid #777; 
 }
 
@@ -116,13 +136,23 @@ body {
     display: inline-block;
 }
 
+
 /* ================================================================================= */
 /*                              CONTACT SECTION                                      */
 /* ================================================================================= */
 
 .section_contact {
     padding-bottom: 25rem;
-    background-color: #333;
+    /* background-color: #333; */
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
 }
 
 .icon_list {
@@ -154,8 +184,8 @@ body {
     height: 8rem;
     padding: .5rem; 
     text-align: center;
-    color: #333333;
-    border-top: 10px solid #777;
+    color: #333;
+    border-top: 1rem solid #777;
     background-color: #f1f1f1;
 }
 
@@ -163,25 +193,35 @@ body {
     margin-bottom: 0; 
 }
 
+/* ===================================================================================== */
+/*                                     MEDIA QUERIES                                     */
+/* ===================================================================================== */
+
+
 @media only screen and (max-width: 900px) {
 
     .container {
-        padding: 4rem 2rem;
+        padding: 4rem 1vw;
     }
     .col-1-of-2 {
         width: 100%;
     }
 
     .project_img {
-        height: 300px;
+        width: 75%;
+        height: auto;
+    }
+
+    .odd {
+        margin-right: 0;
     }
 
     .icon_list {
         padding: 0;
     }
 
-    .icon-item {
-        padding: 0 1rem;
+    .icon_item {
+        font-size: 2.8rem;
+        padding: 0 1.7rem;
     }
 }
-
