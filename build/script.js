@@ -78,7 +78,7 @@ $(document).ready(function () {
                 $("#after-submit").fadeOut(1000);
                 $("form input").val("");
                 $("form textarea").val("");
-            }, 5000);
+            }, 2000);
         });
 
     });
